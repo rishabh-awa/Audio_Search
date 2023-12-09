@@ -17,7 +17,7 @@ def transcribe(url):
 
 #gpt model for question answer
 def questioA(text,prompt,url):
-    openai.api_key=	"apikey"
+    openai.api_key=	"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"
     message = prompt
     messages = f"You are given a video transcript:'{text}' containing text and starting and ending timestamps in format |text:'text'-start time:'start'-end time:'end'| return me the starting and ending timestamps for about 10 to 20 seconds long which contain information related to and relate to {message} the most.The answer must always be in format start:Start time-end:end time"
 
@@ -32,7 +32,10 @@ def questioA(text,prompt,url):
     r = reply[-1].split(":")
     r=float(r[1])
     #trimming the video/audio
-    path = r"C:\Users\Shiv\Desktop\Transcript\frontend\src\output.mp3"
+    if "mp3" in url:  
+        path = r"C:\Users\Shiv\Desktop\Transcript\frontend\src\output.mp3"
+    else:
+        path = r"C:\Users\Shiv\Desktop\Transcript\frontend\src\output.mp4"
     command = ['ffmpeg',
                '-i',url,
                '-ss',str(s),
