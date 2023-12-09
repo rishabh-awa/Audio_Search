@@ -42,7 +42,9 @@ function App() {
           <audio controls>
             <source src="output.mp3" type="audio/mp3"/>
           </audio>
-          ):ret.endsWith("mp4")?(<></>):(<>Invalid file type</>)}</div>):(<div className='card empty' ><CircleLoader className='load' size={100} color='rgb(119, 13, 218)'/></div>)}</>):(<></>)}
+          ):ret.endsWith("mp4")?(<video height={600} width={500} style={{margin:-110}} controls={true}>
+            <source src="output.mp4" type="video/mp4"/>
+          </video>):(<>Invalid file type</>)}</div>):(<div className='card empty' ><CircleLoader className='load' size={100} color='rgb(119, 13, 218)'/></div>)}</>):(<></>)}
         </div>
 
       </header>
