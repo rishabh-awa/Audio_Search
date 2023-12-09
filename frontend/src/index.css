@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+}
+.input-button{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+form{
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  position: relative;
+}
+input , .submit{
+  margin-left: 5px;
+  margin-right: 5px;  
+  min-height: 50px;
+  border: none;
+  border-radius: 10px;
+}
+.submit{
+  position: absolute;
+  left: 280px;
+  top: 30px;
+}
+input{
+  width: 250px;
+  min-width: 200px;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.submit{
+  height: 60px;
+  margin: 6px;
+  width: 120px;
+  font-weight: bold;
+  color: azure;
+  background-color: blueviolet;
+  border: 2px solid rgb(119, 13, 218);
+  
+}
+.submit:hover{
+  margin:4.5px;
+  height: 63px;
+  width: 123px;
+  background-color: rgb(155, 81, 224);
+  font-weight: bolder;
+}
+.text-fields{
+  display: flex;
+  flex-direction: column;
+}
+
+.card{
+  background-color: rgb(245, 245, 245);
+  height: 500px;
+  width: 500px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(119, 13, 218);
+  margin-top: 6px;
+}
+.load{
+  margin:auto;
+  margin-top: 35%;
+}
+audio{
+  margin-top: 35%;
+  height: 100px;
+}
+audio::-webkit-media-controls-panel {
+ 
+  border-radius: 8px;
+}
